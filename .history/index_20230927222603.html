@@ -1,0 +1,529 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+  <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+  <!-- <style>
+        body{
+            font-family: "Roboto Bold", sans-serif;
+        }
+    </style> -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        fontFamily: {
+          sans: ["Roboto", "sans-serif"],
+          body: ["Roboto", "sans-serif"],
+          mono: ["ui-monospace", "monospace"],
+        },
+        colors: {
+          primary: '#F2070F'
+        }
+      },
+      corePlugins: {
+        preflight: false,
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <div class="grid grid-cols-9 gap-5">
+    <div class="col-span-2">
+      <!-- Scrollspy -->
+      <div class="h-full border border-r-1">
+        <div class="bg-[url(./assets/images/bg-head.png)] px-4 py-3 bg-center">
+
+          <img src="./assets/images/logo.png" class="w-20" />
+        </div>
+        <div class="border border-r-0  border-neutral-200 bg-white ">
+          <h2 class="mb-0">
+            <button
+              class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+              type="button" data-te-collapse-init data-te-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              Quy trình theo dõi kinh phí điện nước
+              <span
+                class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div id="collapseOne" class="!visible " data-te-collapse-item data-te-collapse-show
+            aria-labelledby="headingOne" data-te-parent="#accordionExample">
+            <div class="px-9 py-2">
+              <ul data-te-nav-list-ref>
+                <li class="py-2">
+                  <a data-te-nav-link-ref data-te-nav-link-active
+                    class="bg-transparent px-[5px] text-neutral-600 shadow-none " href="#purpose">1.Mục đích</a>
+                </li>
+                <li class="py-2">
+                  <a data-te-nav-link-ref class="bg-transparent px-[5px] text-neutral-600 shadow-none "
+                    href="#scope">2.Phạm vi</a>
+                </li>
+                <li class="py-2">
+                  <a data-te-nav-link-ref class="bg-transparent px-[5px] text-neutral-600 shadow-none "
+                    href="#reference">3.Tài liệu viên dẫn</a>
+                </li>
+                <li class="py-2">
+                  <a data-te-nav-link-ref class="bg-transparent px-[5px] text-neutral-600 shadow-none "
+                    href="#definition">4.Định nghĩa/Viết tắt</a>
+                </li>
+                <li class="py-2">
+                  <a data-te-nav-link-ref class="bg-transparent px-[5px] text-neutral-600 shadow-none "
+                    href="#content">5.Nội dung quy trình</a>
+                </li>
+                <!-- <li class="py-2">
+                  <a data-te-nav-link-ref
+                    class="bg-transparent px-[5px] text-neutral-600 shadow-none dark:text-neutral-200"
+                    href="#example">6.Biểu mẫu</a>
+                </li> -->
+                <li class="py-2">
+                  <a data-te-nav-link-ref
+                    class="bg-transparent px-[5px] text-neutral-600 shadow-none dark:text-neutral-200" href="#note">6.Hồ
+                    sơ lưu </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="  border-neutral-200 bg-white">
+          <h2 class="mb-0" id="headingTwo">
+            <button
+              class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+              type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Quy trình cấp phát VK-CCHT-VT theo ISO 9001-2015
+              <span
+                class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo"
+            data-te-parent="#accordionExample">
+            <div class="px-9 py-2">
+              <ul data-te-nav-list-ref>
+                <li class="py-2">
+                  <a data-te-nav-link-ref data-te-nav-link-active
+                    class="bg-transparent px-[5px] text-neutral-600 shadow-none " href="/page2.html#purpose">1.Mục
+                    đích</a>
+                </li>
+                <li class="py-2">
+                  <a data-te-nav-link-ref class="bg-transparent px-[5px] text-neutral-600 shadow-none "
+                    href="/page2.html#scope">2.Phạm vi</a>
+                </li>
+                <li class="py-2">
+                  <a data-te-nav-link-ref class="bg-transparent px-[5px] text-neutral-600 shadow-none "
+                    href="/page2.html#reference">3.Tài liệu viên dẫn</a>
+                </li>
+                <li class="py-2">
+                  <a data-te-nav-link-ref class="bg-transparent px-[5px] text-neutral-600 shadow-none "
+                    href="/page2.html#definition">4.Định nghĩa/Viết tắt</a>
+                </li>
+                <li class="py-2">
+                  <a data-te-nav-link-ref class="bg-transparent px-[5px] text-neutral-600 shadow-none "
+                    href="/page2.html#content">5.Nội dung quy trình</a>
+                </li>
+                <!-- <li class="py-2">
+                  <a data-te-nav-link-ref
+                    class="bg-transparent px-[5px] text-neutral-600 shadow-none dark:text-neutral-200"
+                    href="#example">6.Biểu mẫu</a>
+                </li> -->
+                <li class="py-2">
+                  <a data-te-nav-link-ref
+                    class="bg-transparent px-[5px] text-neutral-600 shadow-none dark:text-neutral-200"
+                    href="/page2.html#note">6.Hồ sơ lưu </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pl-3 text-sm">
+
+      </div>
+      <!-- Scrollspy -->
+    </div>
+    <div class="col-span-7 bg-[#FDF1B8] text-primary">
+      <div data-te-spy="scroll" data-te-target="#scrollspy1" data-te-offset="50"
+        class="relative h-screen w-full pl-5 pr-10 py-10 overflow-auto overflow-x-hidden">
+        <section id="purpose">
+          <h3 class="pb-3 pt-5 text-xl font-semibold">1. Mục đích</h3>
+          <p class="indent-5">
+            Quy định nội dung, trình tự trách nhiệm về quy trình theo dõi kinh phí điện nước cho các đơn vị Công an
+            thành phố.
+          </p>
+
+        </section>
+        <section id="scope">
+          <h3 class="pb-3 pt-5 text-xl font-semibold">2. Phạm vi</h3>
+          <p class="indent-5">
+            Quy trình này áp dụng đối với Công an các đơn vị, địa phương thuộc Công an thành phố Hải Phòng.
+          </p>
+        </section>
+        <section id="reference">
+          <h3 class="pb-3 pt-5 text-xl font-semibold">3. Tài liệu viện dẫn</h3>
+          <p class="indent-5">
+            Tiêu chuẩn quốc gia TCVN ISO 9001:2015
+          </p>
+          <p class="indent-5">
+            Mô hình khung Hệ thống quản lý chất lượng theo Tiêu chuẩn quốc qua TCVN ISO 9001:2015 trong Công an nhân
+            dân.
+          </p>
+          <p class="indent-5">
+            Nghị định số 01/2021/NĐ-CP, ngày 21/10/2021 của Chính phủ quy định tiêu chuẩn cơ bản về vật chất hậu cần đối
+            với sĩ quan, hạ sĩ quan, chiến sĩ đang phục vụ trong lực lượng Công an nhân dân;
+
+          </p>
+          <p class="indent-5">
+            Thông tư số 107/TT-BTC ngày 10/10/2017 của Bộ Tài chính về việc hướng dẫn chế độ kế toán hành chính sự
+            nghiệp
+
+          </p>
+          <section id="definition">
+            <h3 class="pb-3 pt-5 text-xl font-semibold">4. Định nghĩa/viết tắt</h3>
+            <p class="indent-5">
+              - BCĐX: Báo cáo đề xuất
+            </p>
+            <p class="indent-5">
+              - CATP: Công an thành phố
+            </p>
+          </section>
+          <section id="content">
+            <h3 class="pb-3 pt-5 text-xl font-semibold">5. Nội dung quy trình</h3>
+            <div class="flex flex-col">
+              <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                  <div class="overflow-hidden">
+                    <table class="min-w-full border">
+                      <tbody>
+                        <tr class="border-b">
+                          <td class="whitespace-nowrap border-r px-6 py-4 font-semibold ">
+                            5.1
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 font-semibold">
+                            Cơ sở pháp lý
+                          </td>
+                        </tr>
+                        <tr class="border-b ">
+                          <td class="border-r px-6 py-4 ">
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 ">
+                            <p>
+                              - Nghị định số 01/2021/NĐ-CP, ngày 21/10/2021 của Chính phủ quy định tiêu chuẩn cơ bản về
+                              vật chất hậu cần đối với sĩ quan, hạ sĩ quan, chiến sĩ đang phục vụ trong lực lượng Công
+                              an nhân dân;
+                              <br />
+                              - Thông tư số 107/TT-BTC ngày 10/10/2017 của Bộ Tài chính về việc hướng dẫn chế độ kế toán
+                              hành chính sự nghiệp
+                            </p>
+                          </td>
+                        </tr>
+                        <tr class="border-b dark:border-neutral-500">
+                          <td class="whitespace-nowrap border-r px-6 font-semibold ">
+                            5.2
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 font-semibold">
+                            Điều kiện thực hiện thủ tục hành chính
+                          </td>
+                        </tr>
+                        <tr class="border-b ">
+                          <td class="border-r px-6 py-4 ">
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 ">
+                            <p>
+                              Công an các đơn vị, địa phương trực thuộc CATP đề xuất thanh toán kinh phí sử dụng điện
+                              nước phục vụ công tác, chiến đấu
+                            </p>
+                          </td>
+                        </tr>
+                        <tr class="border-b dark:border-neutral-500">
+                          <td class="whitespace-nowrap border-r px-6 font-semibold ">
+                            5.3
+                          </td>
+                          <td colspan="2" class="border-r px-6 py-4 font-semibold">
+                            Thành phần hồ sơ
+                          </td>
+                          <td class="w-32 border-r px-6 py-4 font-semibold">
+                            Bản chính
+                          </td>
+                          <td class="w-44 border-r px-6 py-4 font-semibold">
+                            Bản sao
+                          </td>
+                        </tr>
+                        <tr class="border-b ">
+                          <td class="border-r px-6 py-4 ">
+                          </td>
+                          <td colspan="2" class=" border-r px-6 py-4 ">
+                            <p>
+                              - Dự trù kinh phí sử dụng điện nước theo mức khoán đầu năm của CATP.
+                              <br />
+                              - Báo cáo đề xuất thanh toán điện nước của các đơn vị
+                              <br />
+                              - Hóa đơn giá trị gia tăng
+                              <br />
+                              - Nhập sổ theo dõi điện nước
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              X <br />
+                              X <br />
+                              X <br />
+                              X <br />
+
+                            </p>
+                          </td>
+                        </tr>
+                        <tr class="border-b dark:border-neutral-500">
+                          <td class="whitespace-nowrap border-r px-6 font-semibold ">
+                            5.4
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 font-semibold">
+                            Số lượng hồ sơ
+                          </td>
+                        </tr>
+                        <tr class="border-b ">
+                          <td class="border-r px-6 py-4 ">
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 ">
+                            <p>
+                              01 (một) bộ
+                            </p>
+                          </td>
+                        </tr>
+                        <tr class="border-b dark:border-neutral-500">
+                          <td class="whitespace-nowrap border-r px-6 font-semibold ">
+                            5.5
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 font-semibold">
+                            Thời gian giải quyết
+                          </td>
+                        </tr>
+                        <tr class="border-b ">
+                          <td class="border-r px-6 py-4 ">
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 ">
+                            <p>
+                              Tối đa 10 ngày kể từ ngày tiếp nhận đề xuất của đơn vị địa phương.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr class="border-b dark:border-neutral-500">
+                          <td class="whitespace-nowrap border-r px-6 font-semibold ">
+                            5.6
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 font-semibold">
+                            Nơi tiếp nhận hồ sơ
+                          </td>
+                        </tr>
+                        <tr class="border-b ">
+                          <td class="border-r px-6 py-4 ">
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 ">
+                            <p>
+                              - Tiếp nhận hồ sơ theo dõi kinh phí điện nước tại trụ sở Phòng Hậu cần số 22 An Đà, Ngô
+                              Quyền, Hải Phòng.
+                              <br />
+                              - Thời gian tiếp nhận: Từ thứ 2 - thứ 6 hàng tuần.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr class="border-b dark:border-neutral-500">
+                          <td class="whitespace-nowrap border-r px-6 font-semibold ">
+                            5.7
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 font-semibold">
+                            Trình tự thực hiện
+                          </td>
+                        </tr>
+                        <tr class="border-b">
+                          <td class="text-center border-r px-6 py-4 font-semibold">
+                            TT
+                          </td>
+                          <td class="border-r text-center px-6 py-4 font-semibold">
+                            Trình tự
+                          </td>
+                          <td class="border-r text-center px-6 py-4 font-semibold">
+                            Trách nhiệm
+                          </td>
+                          <td class="border-r text-center px-6 py-4 font-semibold">
+                            Thời gian
+                          </td>
+                          <td class="border-r text-center px-6 py-4 font-semibold">
+                            Biểu mẫu/kết quả
+                          </td>
+                        </tr>
+                        <tr class="border-b">
+                          <td class="text-center border-r px-6 py-4 font-semibold">
+                            B1
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Cơ quan Hậu cần căn cứ vào dự trù và định mức sử dụng của Công an các đơn vị, địa phương
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Cán bộ theo dõi điện, nước
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Giờ hành chính
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                          </td>
+                        </tr>
+                        <tr class="border-b">
+                          <td class="text-center border-r px-6 py-4 font-semibold">
+                            B2
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Cơ quan Hậu cần xác nhận số lượng điện nước đơn vị thực tế sử dụng theo Hóa đơn GTGT của
+                              đơn vị và xác nhận mức khoán đơn vị được sử dụng
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Cán bộ theo dõi điện, nước
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Giờ hành chính
+                            </p>
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                          </td>
+                        </tr>
+                        <tr class="border-b">
+                          <td class="text-center border-r px-6 py-4 font-semibold">
+                            B3
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Trình Lãnh đạo Phòng Hậu cần xác nhận để làm thủ tục thanh toán điện, nước cho đơn vị
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Lãnh đạo phòng Hậu cần
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Giờ hành chính
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                          </td>
+                        </tr>
+                        <tr class="border-b">
+                          <td class="text-center border-r px-6 py-4 font-semibold">
+                            B4
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Báo cáo định kỳ, đột xuất theo yêu cầu của cấp trên
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Cán bộ theo dõi điện, nước
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                            <p>
+                              Giờ hành chính
+                            </p>
+                          </td>
+                          <td class=" border-r px-6 py-4 ">
+                          </td>
+                        </tr>
+                        <tr class="border-b">
+                          <td class="whitespace-nowrap border-r px-6 py-4 font-semibold">
+                            Lưu ý
+                          </td>
+                          <td colspan="4" class=" border-r px-6 py-4 ">
+                            <p>
+                              - Các bước và trình tự công việc có thể được thay đổi cho phù hợp với cơ cấu tổ chức và
+                              việc phân công nhiệm vụ cụ thể của mỗi đơn vị.
+                              <br />
+                              - Tổng thời gian phân bổ cho các bước công việc không vượt quá thời gian quy định hiện
+                              hành của thủ tục này.
+
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="note">
+          <h3 class="pb-3 pt-5 text-xl font-semibold">6. Hồ sơ lưu</h3>
+          <div class="flex flex-col">
+            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                <div class="overflow-hidden">
+                  <table class="min-w-full border ">
+                    <thead class="border-b font-semibold ">
+                      <tr>
+                        <th scope="col" class="text-center border-r px-6 py-4 ">
+                          TT
+                        </th>
+                        <th scope="col" class="text-center border-r px-6 py-4 ">
+                          Hồ sơ lưu
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b">
+                        <td class="whitespace-nowrap border-r px-6 py-4 font-medium ">
+                          1
+                        </td>
+                        <td class="whitespace-nowrap border-r px-6 py-4 ">
+                          <p>
+                            - Bản gốc: Báo cáo đề xuất, Hóa đơn giá trị gia tăng
+                          </p>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
