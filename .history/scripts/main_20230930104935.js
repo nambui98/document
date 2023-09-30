@@ -36,21 +36,11 @@ tailwind.config = {
     }
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-    const script = document.createElement("script");
-    script.src = "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js";
+const script = document.createElement("script");
+script.src = "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js";
 
-    script.addEventListener("load", function () {
-        // Tệp JavaScript đã được tải hoàn toàn
-        const fragmentId = window.location.hash.substring(1);
-        // Scroll to the element with the fragment identifier as its id
-        if (fragmentId) {
-            const element = document.getElementById(fragmentId);
-            if (element) {
-                element.scrollIntoView();
-            }
-        }
-    });
+script.addEventListener("load", function () {
+    // Tệp JavaScript đã được tải hoàn toàn
+});
 
-    document.body.appendChild(script);
-})
+document.body.appendChild(script); 
